@@ -1,0 +1,19 @@
+{
+  "name": "my-docs",
+  "version": "0.0.1",
+  "authors": [
+    "alexmon1989 <alex.mon1989@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "startbootstrap-sb-admin-2": "~1.0.5"
+  }
+}

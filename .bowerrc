@@ -1,0 +1,5 @@
+{
+	"directory": "public/assets/packages",
+	"proxy":"http://10.10.16.8:3128",
+	"https-proxy":"http://10.10.16.8:3128"
+}
