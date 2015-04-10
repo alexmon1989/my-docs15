@@ -64,7 +64,12 @@
                     </div>
                 </div>
                 
-                
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="vacancies">Вакансии</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control ckeditor" id="vacancies" name="vacancies">{{ Input::old('vacancies', isset($centre) ? $centre->vacancies : '') }}</textarea>
+                    </div>
+                </div>                
                 
                 <!-- Button -->
                 <div class="form-group">

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTitleToCentreFiles extends Migration {
+class AddVacanciesFieldToCentres extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,8 +12,8 @@ class AddTitleToCentreFiles extends Migration {
 	 */
 	public function up()
 	{
-            Schema::table('centres_files', function ($table) {
-                $table->text('title')->after('id');
+            Schema::table('centres', function ($table) {
+                $table->text('vacancies')->after('how_to_get')->nullable();
             });
 	}
 
@@ -24,8 +24,8 @@ class AddTitleToCentreFiles extends Migration {
 	 */
 	public function down()
 	{
-            Schema::table('centres_files', function ($table) {
-                $table->dropColumn('title');
+            Schema::table('centres', function ($table) {
+                $table->dropColumn('vacancies');
             });
 	}
 

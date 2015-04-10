@@ -82,6 +82,13 @@
         </div>
     </div>
     @endif
+    
+    @if ($centre->vacancies)
+    <div class="row">
+        <h4>Вакансии:</h4>        
+        <div>{{ $centre->vacancies }}</div>
+    </div>
+    @endif
 
 @if ($centre->latitude and $centre->longtitude)
 <script>

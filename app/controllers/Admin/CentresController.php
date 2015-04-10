@@ -101,6 +101,7 @@ class CentresController extends BaseController {
                 $centre->longtitude = trim(Input::get('longtitude'));
                 $centre->add_data = trim(Input::get('add_data'));
                 $centre->how_to_get = trim(Input::get('how_to_get'));
+                $centre->vacancies = trim(Input::get('vacancies'));
                 
                 // Сохраняем и возвращаем
                 $centre->save();
@@ -140,6 +141,7 @@ class CentresController extends BaseController {
             $centre->longtitude = trim(Input::get('longtitude'));
             $centre->add_data = trim(Input::get('add_data'));
             $centre->how_to_get = trim(Input::get('how_to_get'));
+            $centre->vacancies = trim(Input::get('vacancies'));
 
             // Сохраняем и возвращаем
             $centre->save();
