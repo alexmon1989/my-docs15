@@ -11516,8 +11516,6 @@ if (typeof jQuery === 'undefined') {
         $.post('api/change-centre', { id : id }, function(data) {
             if (data.id) {
                 location.reload();
-                //$('.centre-info > .title').html(data.title);
-                //$('.centre-info > .help-block > .hotline').html(data.hot_line);
             }            
         });
     });
