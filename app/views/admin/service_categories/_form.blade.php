@@ -14,6 +14,7 @@
             <label class="col-md-2 control-label" for="organization_id">Ведомство*</label>  
             <div class="col-md-6">
                 <select id="organization_id" name="organization_id" class="form-control">
+                    <option value="">&nbsp;</option>
                     @foreach($organizations as $organization)
                     <option value="{{{ $organization->id }}}" {{ (Input::old('organization_id', isset($service_category) ? $service_category->organization_id : '') == $organization->id) ? 'selected="selected"' : "" }}>{{{ $organization->title }}}</option>
                     @endforeach

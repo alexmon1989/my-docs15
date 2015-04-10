@@ -12,7 +12,7 @@ class ServiceCategoriesController extends BaseController {
     // Правила валидации вход. данных
     private $rules = array(
         'title' => 'required',
-        'organization_id' => 'required|integer|exists:organizations,id',
+        'organization_id' => 'integer|exists:organizations,id',
         'image' => 'mimes:jpeg,bmp,png,gif'
     );
     
@@ -59,7 +59,11 @@ class ServiceCategoriesController extends BaseController {
         if (!$validator->fails()) {
             // Текстовые данные
             $service_category->title = trim(Input::get('title'));
-            $service_category->organization_id = Input::get('organization_id');
+            if (Input::get('organization_id') != '') {
+                $service_category->organization_id = Input::get('organization_id');
+            } else {
+                $service_category->organization_id = NULL;
+            }
             $service_category->global_service_category_id = $id;
             
             // Файл-изображение
@@ -120,7 +124,11 @@ class ServiceCategoriesController extends BaseController {
             if ( !$validator->fails() ) {
                 // Текстовые данные
                 $service_category->title = trim(Input::get('title'));
-                $service_category->organization_id = Input::get('organization_id');
+                if (Input::get('organization_id') != '') {
+                    $service_category->organization_id = Input::get('organization_id');
+                } else {
+                    $service_category->organization_id = NULL;
+                }
                 
                 // Файл-изображение
                 if (Input::hasFile('image')) {
