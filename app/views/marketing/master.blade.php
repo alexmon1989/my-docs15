@@ -51,9 +51,10 @@
             <div class="row">
                 <ul class="nav nav-pills">
                     <li role="presentation"><a href="http://gosuslugi.ru" target="_blank">Электронные услуги</a></li>
-                    <li role="presentation" @if (Request::segment(1) == 'press') class="active" @endif><a href="{{ action('Marketing\PressController@getShow') }}">Пресса о нас</a></li>
+                    <li role="presentation" @if (Request::segment(1) == 'press') class="active" @endif><a href="{{ action('Marketing\PressController@getShow') }}">СМИ о нас</a></li>
                     <li role="presentation" @if (Request::segment(1) == 'members') class="active" @endif><a href="{{ action('Marketing\MembersController@getShow') }}">Участники МФЦ</a></li>
                     <li role="presentation" @if (Request::segment(1) == 'centre') class="active" @endif><a href="{{ action('Marketing\CentreController@getShow') }}">О центре</a></li>
+                    <li role="presentation" @if (Request::segment(1) == 'news') class="active" @endif><a href="{{ action('Marketing\NewsController@getIndex') }}">Новости</a></li>
                 </ul>
             </div>
 
