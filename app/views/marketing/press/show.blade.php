@@ -8,7 +8,7 @@
     
 <div class="row">
 
-    <h3>Пресса о нас</h3>
+    <h3>СМИ о нас</h3>
     
     <div>                
         {{ $press->full_text }}
