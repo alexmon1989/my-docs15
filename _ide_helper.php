@@ -1,7 +1,7 @@
 <?php
 /**
  * An helper file for Laravel 4, to provide autocomplete information to your IDE
- * Generated for Laravel 4.2.17 on 2015-04-07.
+ * Generated for Laravel 4.2.17 on 2015-04-17.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12445,6 +12445,83 @@ namespace {
          */
         public static function cache($callback, $lifetime = null, $returnObj = false){
             return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+        
+    }
+
+
+    class Captcha extends \Mews\Captcha\Facades\Captcha{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function instance(){
+            return \Mews\Captcha\Captcha::instance();
+        }
+        
+        /**
+         * Generates a captcha image, writing it to the output
+         * It is used internally by this bundle when pointing to "/captcha" (see [vendor]\routes.php)
+         * Typically, you won't use this function, but use the above img() function instead
+         *
+         * @access public
+         * @return \Mews\Captcha\Response 
+         * @static 
+         */
+        public static function create($formId = null){
+            return \Mews\Captcha\Captcha::create($formId);
+        }
+        
+        /**
+         * Fonts
+         *
+         * @access public
+         * @param string
+         * @return array 
+         * @static 
+         */
+        public static function assets($type = null){
+            return \Mews\Captcha\Captcha::assets($type);
+        }
+        
+        /**
+         * Select asset
+         *
+         * @access public
+         * @param string
+         * @return string 
+         * @static 
+         */
+        public static function asset($type = null){
+            return \Mews\Captcha\Captcha::asset($type);
+        }
+        
+        /**
+         * Checks if the supplied captcha test value matches the stored one
+         *
+         * @param string $value
+         * @param string $formId
+         * @access public
+         * @return bool 
+         * @static 
+         */
+        public static function check($value, $formId = null){
+            return \Mews\Captcha\Captcha::check($value, $formId);
+        }
+        
+        /**
+         * Returns an URL to the captcha image
+         * For example, you can use in your view something like
+         * <img src="<?php echo Captcha::img(); ?>" alt="" />
+         *
+         * @access public
+         * @return string 
+         * @static 
+         */
+        public static function img($formId = null){
+            return \Mews\Captcha\Captcha::img($formId);
         }
         
     }

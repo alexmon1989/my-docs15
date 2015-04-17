@@ -55,6 +55,7 @@
                     <li role="presentation" @if (Request::segment(1) == 'members') class="active" @endif><a href="{{ action('Marketing\MembersController@getShow') }}">Участники МФЦ</a></li>
                     <li role="presentation" @if (Request::segment(1) == 'centre') class="active" @endif><a href="{{ action('Marketing\CentreController@getShow') }}">О центре</a></li>
                     <li role="presentation" @if (Request::segment(1) == 'news') class="active" @endif><a href="{{ action('Marketing\NewsController@getIndex') }}">Новости</a></li>
+                    <li role="presentation" @if (Request::segment(1) == 'complaint') class="active" @endif><a href="{{ action('Marketing\ComplaintController@getShow') }}">Отправить жалобу</a></li>
                 </ul>
             </div>
 
@@ -76,6 +77,6 @@
     </script>
     <!-- {/literal} END JIVOSITE CODE -->
     
-    <script src="//localhost:35729/livereload.js"></script>
+    <!-- <script src="//localhost:35729/livereload.js"></script> -->
 </body>
 </html>

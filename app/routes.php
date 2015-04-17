@@ -24,6 +24,8 @@ Route::get('links', 'Marketing\LinksController@getShow');
 Route::get('press', 'Marketing\PressController@getShow');
 Route::get('documents', 'Marketing\DocumentsController@getShow');
 Route::get('queue', 'Marketing\QueueController@getShow');
+Route::get('complaint', 'Marketing\ComplaintController@getShow');
+Route::post('complaint', 'Marketing\ComplaintController@postShow');
 
 // Роуты для ajax-запросов
 Route::controller('api', 'API\ApiController');

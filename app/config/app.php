@@ -125,7 +125,8 @@ return array(
                 'Pingpong\Widget\WidgetServiceProvider',
                 'Barryvdh\Elfinder\ElfinderServiceProvider',
                 'Intervention\Image\ImageServiceProvider',
-                'Mascame\Urlify\UrlifyServiceProvider'
+                'Mascame\Urlify\UrlifyServiceProvider',
+                'Mews\Captcha\CaptchaServiceProvider',
 
 	),
 
@@ -194,7 +195,8 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
                 'Widget'            => 'Pingpong\Widget\Facades\Widget',
-                'Image'             => 'Intervention\Image\Facades\Image'
+                'Image'             => 'Intervention\Image\Facades\Image',
+                'Captcha'           => 'Mews\Captcha\Facades\Captcha',
 
 	),
 

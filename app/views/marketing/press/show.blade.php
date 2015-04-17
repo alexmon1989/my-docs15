@@ -1,7 +1,7 @@
 @extends('marketing.master')
 
 @section('title')
-Пресса о нас
+СМИ о нас
 @endsection
 
 @section('content')

@@ -10,7 +10,8 @@
                 "pingpong/widget" : "1.0.*",
 		"barryvdh/laravel-elfinder": "0.2.*",
 		"intervention/image": "~2.1",
-                "mascame/urlify": "dev-master"
+                "mascame/urlify": "dev-master",
+                "mews/captcha": "dev-master-l4"
 	},
 	"autoload": {
 		"classmap": [

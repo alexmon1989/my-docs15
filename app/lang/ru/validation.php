@@ -26,6 +26,7 @@
         "array" => "Количество элементов в поле :attribute должно быть между :min и :max."
         ),
         "boolean" => "Поле :attribute должно иметь значение логического типа.", // калька 'истина' или 'ложь' звучала бы слишком неестественно
+        "captcha" => "Поле <strong>:attribute</strong> не совпадает с изображением текста на картинке.",
         "confirmed" => "Поле :attribute не совпадает с подтверждением.",
         "date" => "Поле :attribute не является датой.",
         "date_format" => "Поле :attribute не соответствует формату :format.",
@@ -54,7 +55,7 @@
         "not_in" => "Выбранное значение для :attribute ошибочно.",
         "numeric" => "Поле :attribute должно быть числом.",
         "regex" => "Поле :attribute имеет ошибочный формат.",
-        "required" => "Поле :attribute обязательно для заполнения.",
+        "required" => "Поле <strong>:attribute</strong> обязательно для заполнения.",
         "required_if" => "Поле :attribute обязательно для заполнения, когда :other равно :value.",
         "required_with" => "Поле :attribute обязательно для заполнения, когда :values указано.",
         "required_with_all" => "Поле :attribute обязательно для заполнения, когда :values указано.",
